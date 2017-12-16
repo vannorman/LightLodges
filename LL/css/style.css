@@ -1,7 +1,9 @@
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 45.25%; /* 16:9 */
+	padding-bottom: 45.25%; /* some nice size */
 	padding-top: 25px;
+	padding-bottom:250px;
 	height: 0;
 	display:none;
 	margin-bottom:-1000px; /* prevents it from pushing down the image when its visible */ 
@@ -32,3 +34,47 @@
 }
 .mainVid iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
+.item {
+	display:inline-block;
+}
+
+.episodes-carousel {
+	width:2000px;
+	position:relative;
+}
+
+#owl-controls {
+	
+    position: absolute;
+    /* margin-bottom: -200px; */
+    margin-top: -140px;
+	padding:0 10px;
+    /* top: 200px; */
+    height: 40px;
+    width: 100%;
+}
+
+#prevVideo:hover, #nextVideo:hover{
+	background-color: gray;
+	color:#a4c;
+	cursor:pointer;
+}
+
+#prevVideo, #nextVideo {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color:white;
+	color:black;
+	text-align:center;
+	line-height:33px;
+	font-weight:bold;
+	font-size:40px;
+	color:#555;
+}
+#prevVideo {
+	float:left;
+}
+#nextVideo {
+	float:right;
+}

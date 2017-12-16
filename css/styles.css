@@ -13519,6 +13519,7 @@ header .social-links {
   position: relative;
   display: inline-grid;
   overflow: hidden;
+	pointer-events:none; /* charlie added to allow clicking through the text to play/stop vid */
 }
 
 /* line 315, ../sass/styles.scss */
@@ -13562,6 +13563,7 @@ position: absolute;
   right: 30px;
   top: 30px;
   z-index: 3;
+  pointer-events:all; /* charlie */
 }
 
 /* line 349, ../sass/styles.scss */
