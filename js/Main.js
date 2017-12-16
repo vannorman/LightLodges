@@ -12,7 +12,7 @@ Portfolio:  https://themeforest.net/user/iwthemes/portfolio?ref=iwthemes
  (function ($) {
     "use strict";
 	setTimeout(function(){LoadCarousel()},100);
-
+	// rly tho
  })(jQuery);
 
 function LoadCarousel(){
