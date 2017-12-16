@@ -46,6 +46,8 @@ function PlayVideo(player,el){
 function StopAllVideos(){
 	player1.stopVideo();
 	player2.stopVideo();
+	player3.stopVideo();
+	player4.stopVideo();
 }
 
 offset = 0;
