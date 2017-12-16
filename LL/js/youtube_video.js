@@ -1,12 +1,13 @@
 $ = jQuery;
 
-var player1;
-var player2;
+var player1, player2, player3, player4;
 
 function onYouTubeIframeAPIReady() {
 
 	player1 = createPlayer("video_1");
 	player2 = createPlayer("video_2");
+	player3 = createPlayer("video_3");
+	player4  = createPlayer("video_4");
 	
 
 }
@@ -28,16 +29,15 @@ function onPlayerStateChange(eventData){}
 
 function PlayVideo(player,el){
 	StopAllVideos();
-	var regVidHeight = 238;
 
 	$('.episodes-carousel .item').each(function(){
 		$(this).find('.videoWrapper').hide();
-		$(this).find('.img').css('height',regVidHeight);
+//		$(this).find('.img').css('height',regVidHeight);
 		$(this).find('.play-episode').show();
 	});
 	$(el).parent().find('.play-episode').hide();
 	$(el).parent().find('.videoWrapper').show();
-	$(el).parent().find('.img').css('height','12px');
+//	$(el).parent().find('.img').css('height','12px');
 	console.log('el:'+$(el).attr('class')+", el par:"+$(el).parent().attr('class'));
 	player.playVideo();
 	
@@ -53,8 +53,8 @@ $(window).resize(function(){
 	Resize();
 });
 
-	
 function Resize(){
+
 	offset = parseInt($('.mainVid').css('width').replace('px',''));
 	var offY = 0;
 	if (offset > 860) {
