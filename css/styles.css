@@ -13291,6 +13291,7 @@ textarea {
   line-height: 35px;
   border-radius: 50%;
   padding: 4px 18px;
+ margin: auto -30px; /* charlie added, makes buttons appear NOT on top of carousel items. */
 }
 
 /* line 163, ../sass/styles.scss */
@@ -13442,6 +13443,7 @@ header .main-content {
   z-index: 1;
   color: #fff;
   padding: 100px 0;
+  padding: 0; /* charlie added padding 0 for full screen feeling of main splash vid. */
 }
 
 /* line 266, ../sass/styles.scss */
@@ -13521,7 +13523,8 @@ header .social-links {
 
 /* line 315, ../sass/styles.scss */
 .episodes-carousel .item-episode .about-episode {
-  position: absolute;
+	pointer-events:none; /* charlie added to allow clicking through the text to play/stop vid */
+position: absolute;
   left: 0;
   width: 100%;
   bottom: 10px;

@@ -5,13 +5,33 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
         <meta name="Description" content=""/>
         <meta name="author" content=""/>
-        <title>Tv-Entertainment Responsive Landing Page</title>
+        <title>Light Lodges</title>
         <meta name="robots" content=""/>
         <meta name="googlebot" content=""/>
         <meta name="google" content="nositelinkssearchbox"/>
-        <link href="css/styles.css" rel="stylesheet" media="screen">
+
+		
+		
+		
+		<link href="css/styles.css" rel="stylesheet" media="screen">
         <link href="LL/css/style.css" rel="stylesheet" media="screen">
         <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+		
+		
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Main Functions-->
+        <!-- Carousel-->
+        <script type="text/javascript" src="js/carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+		
+		
+		
+		<script type="text/javascript" src="LL/js/youtube_video.js"></script>
 	
 	</head>
 
@@ -29,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <a href="#" class="logo"></a>
+							<a href="#" class="logo" style="display:inline-block"></a><div style="display:inline-block; font-size:30px;font-weight:bold;font-color:white;line-height:100px;vertical-align:top;">Light Lodges</div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12">
                             <ul class="menu">
@@ -43,21 +63,42 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.facebook.com/IwThemesTF" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/iwthemes" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCEb3nAep6tYiAkZpqi0Kzew" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                       <!-- <a href="#"><i class="fa fa-vimeo"></i></a> -->
+                        <a href="https://www.facebook.com/pages/Light-Lodges/1612225422143423" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/lightlodges?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+                        <a href="https://www.youtube.com/channel/UCZKLGqWMOg7hDRWVEqsyakw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+ 
+
+                      <!-- <a href="#"><i class="fa fa-vimeo"></i></a> -->
                     </div>
                 </div>
             </nav>
             <!--Menu-->
 
             <div class="main-content">
-                <div class="container">
+				<div class='mainVidContainer'>
+					<div class='mainVid' >
+				
+						<!-- Copy & Pasted from YouTube -->
+									
+							<iframe id="video_0"
+								width="640" height="360"
+								src="https://www.youtube.com/embed/WomoZSBLdgM?enablejsapi=1&autoplay=1&mute=1"
+								frameborder="0"
+								style="border: solid 4px #37474F"
+							></iframe>
+							
+						</div>
+				</div>
+
+				
+				<div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3>LightLodges </h3>
-                            <a href="#" class="play-episode"><i class="fa fa-play"></i></a>
+							
+							
+							
                             <label class="time"></label>
                             <!-- <p>After being brutally forced to fall under Negan's will, Rick now understands Negan can't be reasoned with, and any day could be the survivors' last.</p> -->
                         </div>
@@ -80,41 +121,90 @@
             <div class="episodes-carousel">
                    <!--episode-->
 
-
+				   
+			<!-- VIDEO -->
                 <div class="item">
-                    <!--episode-->
                     <div class="item-episode">
                     	<div class="videoWrapper">
 							<!-- Copy & Pasted from YouTube -->
 							
 							<iframe id="video_1"
 								width="640" height="360"
-								src="https://www.youtube.com/embed/wk-fsuy84oM?enablejsapi=1"
+								src="https://www.youtube.com/embed/3DW000mIGTI?enablejsapi=1"
 								frameborder="0"
 								style="border: solid 4px #37474F"
 							></iframe>
 							
 						</div>
 
-						<img src="img/episodes-screen/episode2.jpg" alt="img">
-                        <a href="#" class="play-episode" ><i class="fa fa-play"></i></a>
+						<img class='img' src="img/episodes-screen/episode2.jpg" alt="img">
+                        <a onclick=javascript:PlayVideo(player1,this); class="play-episode" ><i class="fa fa-play"></i></a>
                         <div class="about-episode">
-                            <h2>EO2</h2>
+                            <h2>KENTON WOMEN'S VILLAGE</h2>
                             <label class="time"><!-- 57:00 --></label>
-                           <!-- <p>After being brutally forced to fall under Negan's will, Rick now understands Negan can't be reasoned with.</p> -->
                         </div>
                     </div>
-                    <!--episode-->
-
                 </div>
 
+    
+			<!-- VIDEO -->
                 <div class="item">
-                    <!--episode-->
                     <div class="item-episode">
                     	<div class="videoWrapper">
 							<!-- Copy & Pasted from YouTube -->
 							
-							<iframe id="video_2"
+							<iframe id="video_1"
+								width="640" height="360"
+								src="https://www.youtube.com/embed/Aeko4l5apuU?enablejsapi=1"
+								frameborder="0"
+								style="border: solid 4px #37474F"
+							></iframe>
+							
+						</div>
+
+						<img class='img' src="img/episodes-screen/episode2.jpg" alt="img">
+                        <a onclick=javascript:PlayVideo(player1,this); class="play-episode" ><i class="fa fa-play"></i></a>
+                        <div class="about-episode">
+                            <h2>CONVERGENCE</h2>
+                            <label class="time"><!-- 57:00 --></label>
+                        </div>
+                    </div>
+                </div>
+
+
+			<!-- VIDEO -->
+                <div class="item">
+                    <div class="item-episode">
+                    	<div class="videoWrapper">
+							<!-- Copy & Pasted from YouTube -->
+							
+							<iframe id="video_1"
+								width="640" height="360"
+								src="https://www.youtube.com/embed/d9ovlt3pohw?enablejsapi=1"
+								frameborder="0"
+								style="border: solid 4px #37474F"
+							></iframe>
+							
+						</div>
+
+						<img class='img' src="img/episodes-screen/episode2.jpg" alt="img">
+                        <a onclick=javascript:PlayVideo(player1,this); class="play-episode" ><i class="fa fa-play"></i></a>
+                        <div class="about-episode">
+                            <h2>PORTLAND</h2>
+                            <label class="time"><!-- 57:00 --></label>
+                        </div>
+                    </div>
+                </div>
+
+
+    
+			<!-- VIDEO -->
+                <div class="item">
+                    <div class="item-episode">
+                    	<div class="videoWrapper">
+							<!-- Copy & Pasted from YouTube -->
+							
+							<iframe id="video_1"
 								width="640" height="360"
 								src="https://www.youtube.com/embed/yNh9SQtjwc8?enablejsapi=1"
 								frameborder="0"
@@ -123,17 +213,17 @@
 							
 						</div>
 
-						<img src="img/episodes-screen/episode2.jpg" alt="img">
-                        <a href="#" class="play-episode"><i class="fa fa-play"></i></a>
+						<img class='img' src="img/episodes-screen/episode2.jpg" alt="img">
+                        <a onclick=javascript:PlayVideo(player1,this); class="play-episode" ><i class="fa fa-play"></i></a>
                         <div class="about-episode">
-                            <h2>EO2</h2>
+                            <h2>VILLAGE BUILDER</h2>
                             <label class="time"><!-- 57:00 --></label>
-                           <!-- <p>After being brutally forced to fall under Negan's will, Rick now understands Negan can't be reasoned with.</p> -->
                         </div>
                     </div>
-                    <!--episode-->
-
                 </div>
+
+    
+	
 			</div>
 		</div>
 
@@ -178,7 +268,6 @@
                                 <!--End mc_embed_signup-->
 
                                 <div class="social-circles">
-hi
                                     <a href="https://www.facebook.com/IwThemesTF" target="_blank"><i class="fa fa-facebook"></i></a>
                                     <a href="https://twitter.com/iwthemes" target="_blank"><i class="fa fa-twitter"></i></a>
                                     <a href="https://www.youtube.com/channel/UCEb3nAep6tYiAkZpqi0Kzew" target="_blank"><i class="fa fa-youtube-play"></i></a>
@@ -246,7 +335,7 @@ hi
                         <div class="downloads">
                             <h2>We will be available on:</h2>
                             <div class="row">
-                                <a href="#"><img src="twitch.png" alt="mobile screen"></a>
+                                <a href="#"><img src="LL/img/twitch.png" alt="mobile screen"></a>
                                 <a href="#"><img src="" alt=""></a>
                                 <a href="#"><img src="" alt=""></a>
                                 <a href="#"><img src="" alt=""></a>
@@ -327,16 +416,5 @@ hi
 
 
 
-        <!-- ======================= JQuery libs =========================== -->
-        <!-- jQuery local-->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-        <!-- Bootstrap.js-->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- Main Functions-->
-        <!-- Carousel-->
-        <script type="text/javascript" src="js/carousel/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="LL/js/youtube_video.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
