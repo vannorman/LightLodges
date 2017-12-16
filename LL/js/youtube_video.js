@@ -26,4 +26,7 @@ function onPlayerReady(eventData){}
 
 function onPlayerStateChange(eventData){}
 
-function PlayThisVideo
+function PlayThisVideo(player,el){
+	
+}
+
