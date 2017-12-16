@@ -1,0 +1,43 @@
+/*
+Available font weights are:
+
+Owswald     :  Semibold 600
+Raleway     :  Regular 400
+
+*/
+/* line 15, ../../sass/_partials/fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+/* line 20, ../../sass/_partials/fonts.scss */
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* line 24, ../../sass/_partials/fonts.scss */
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* line 28, ../../sass/_partials/fonts.scss */
+h3 {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+/* line 32, ../../sass/_partials/fonts.scss */
+h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* line 36, ../../sass/_partials/fonts.scss */
+p {
+  color: #6d6d6d;
+  font-weight: 400;
+}

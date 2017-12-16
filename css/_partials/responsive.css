@@ -1,0 +1,61 @@
+@media (max-width: 1390px) {
+  /* line 3, ../../sass/_partials/responsive.scss */
+  .main-container .container, footer .container {
+    width: auto !important;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 12, ../../sass/_partials/responsive.scss */
+  header .main-content p {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  /* line 19, ../../sass/_partials/responsive.scss */
+  .social-circles {
+    margin-bottom: 50px;
+  }
+
+  /* line 21, ../../sass/_partials/responsive.scss */
+  footer .about {
+    text-align: left !important;
+  }
+  /* line 24, ../../sass/_partials/responsive.scss */
+  footer .copy {
+    margin-top: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  /* line 29, ../../sass/_partials/responsive.scss */
+  header .row {
+    display: block !important;
+  }
+  /* line 33, ../../sass/_partials/responsive.scss */
+  header nav .menu {
+    margin: 0;
+    padding: 20px 0 0 0 !important;
+    text-align: left !important;
+  }
+}
+@media (max-width: 569px) {
+  /* line 43, ../../sass/_partials/responsive.scss */
+  .download .downloads img {
+    width: 70px;
+  }
+
+  /* line 46, ../../sass/_partials/responsive.scss */
+  footer .footer-info {
+    padding: 100px 15px 40px 15px !important;
+  }
+}
+@media (max-width: 400px) {
+  /* line 52, ../../sass/_partials/responsive.scss */
+  .about-subscription, .comments, .download {
+    padding: 100px 15px !important;
+  }
+
+  /* line 56, ../../sass/_partials/responsive.scss */
+  footer .col-xs-6 {
+    width: 100%;
+  }
+}

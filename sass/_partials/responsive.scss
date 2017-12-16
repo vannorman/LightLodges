@@ -1,0 +1,60 @@
+@media (max-width: 1390px) {
+    .main-container, footer{
+        .container{
+            width: auto !important;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header{
+        .main-content{
+            p{
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .social-circles { margin-bottom: 50px; }
+    footer{
+        .about{
+            text-align: left !important;
+        }
+        .copy{ margin-top: 20px !important; }
+    }
+}
+@media (max-width: 991px) {
+    header{
+        .row{
+            display: block !important;
+        }
+        nav{
+            .menu{
+                margin: 0;
+                padding: 20px 0 0 0 !important;
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 569px) {
+    .download .downloads img{
+        width: 70px;
+    }
+    footer .footer-info{
+        padding: 100px 15px 40px 15px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-subscription,.comments, .download {
+        padding: 100px 15px !important;
+    }
+    footer{
+        .col-xs-6{
+            width: 100%;
+        }
+    }
+}
