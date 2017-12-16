@@ -68,6 +68,26 @@ function Resize(){
 	// iff offset width is at 1170, the top offset should be about -100
 
 	$('.mainVid iframe').css('top',offY);
+
+
+	movieObjectsWidth = GetMovieObjectsWidth();
+	if (movieObjectsWidth < $(window).width()) {
+		$('#owl-controls').hide();
+	} else {
+		$('#owl-controls').show();
+	
+	}
+
+
+}
+
+function GetMovieObjectsWidth(){
+	all_children_width = 0;
+	$('.episodes-carousel .item').each(function(){ 
+		all_children_width += $(this).width();
+	});
+	return all_children_width;
+
 }
 
 $(document).ready(function(){
@@ -82,12 +102,8 @@ function NextVideo(){
 	var slideAmount = $('.episodes-carousel .item').first().width();
 	sliding = true;
 	wid = $(window).width();
-	all_children_width = 0;
-	$('.episodes-carousel .item').each(function(){ 
-		all_children_width += $(this).width();
-	});
 
-	var minL = wid - all_children_width;
+	var minL = wid - GetMovieObjectsWidth();
 	
 	prevL = parseInt($('.episodes-carousel').css('left'));
 	prevL -= slideAmount;
