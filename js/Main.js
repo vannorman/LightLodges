@@ -11,7 +11,11 @@ Portfolio:  https://themeforest.net/user/iwthemes/portfolio?ref=iwthemes
 
  (function ($) {
     "use strict";
+	setTimeout(function(){LoadCarousel()},100);
 
+ })(jQuery);
+
+function LoadCarousel(){
      $(document).ready(function(){
         $('nav ul li a').click(function(){
             var el = $(this).attr('href');
@@ -27,9 +31,6 @@ Portfolio:  https://themeforest.net/user/iwthemes/portfolio?ref=iwthemes
                             scrollTop: totalScroll
                 }, 500);
         }
-    });
-
-     $(document).ready(function(){
          $('.episodes-carousel').owlCarousel({
             stagePadding: 50,
             loop:true,
@@ -61,6 +62,5 @@ Portfolio:  https://themeforest.net/user/iwthemes/portfolio?ref=iwthemes
       );
      });
 
+}
 
-
- })( jQuery );
